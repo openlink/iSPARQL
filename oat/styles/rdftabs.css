@@ -1,0 +1,236 @@
+/*
+ *  $Id$
+ *
+ *  This file is part of the OpenLink Software Ajax Toolkit (OAT) project.
+ *
+ *  Copyright (C) 2005-2014 OpenLink Software
+ *
+ *  See LICENSE file for details.
+ */
+/* browser */
+
+.rdft_browser {
+  font-size: 8pt;
+}
+
+.rdft_browser h3 {}
+.rdft_browser rdf_s {}
+.rdft_browser h3.rdf_subject {}
+.rdft_browser h3.data { display: none }
+
+
+.rdft_browser div.rdf_data {
+	width: 100%;
+	margin-top: 1em;
+	padding-bottom: 10px;
+}
+
+.rdf_sort {
+	padding-bottom: 10px;
+}
+
+.rdft_browser .rdf_item h3 {	
+  font-size: 9pt;
+  color: inherit;
+}
+
+.rdft_browser .rdf_item h3 a {
+  text-decoration: none;
+  color: #333;	     
+}
+
+.rdft_browser .rdf_item h3 a:hover {
+  text-decoration: underline;
+  color: #337;
+}
+
+.rdft_browser .rdf_item {
+/*
+	padding: 10px;
+	padding-top: 0px;
+	width: 90%;
+	clear: both;
+	border: 1px solid #888;
+	margin: 0.5em;
+	background-color: #eee;
+	overflow: hidden;
+*/
+	border-top: 1px solid #333;
+	width: 100%;
+	clear: both;
+	float: left;	
+	margin: 8px 0 0 0;
+}
+
+.rdft_browser div.rdf_preds {}
+.rdft_browser div.rdf_p { float: left; clear: left; width: 33%; font-weight: bold; overflow: hidden}
+.rdft_browser div.rdf_p a { text-decoration: none; color: #337 }
+.rdft_browser div.rdf_p a:hover { text-decoration: underline }
+
+.rdft_browser ul.rdf_o { float: left; margin-top: 0px; margin-bottom: 5px; padding: 0;width: 66%}
+.rdft_browser li.rdf_o { list-style-type: none; }
+.rdft_browser li.rdf_o a { text-decoration: none; color: #337;}
+.rdft_browser li.rdf_o a:hover { text-decoration: underline; }
+
+.rdft_browser ul.rdf_o img { max-width: 100%}
+
+.rdf_group {
+	background-color: #ddd
+}
+
+.rdf_clear {
+	clear:left
+}
+	
+/* timeline */
+.rdf_tl_port {
+	position: relative;
+	height: 100%
+}
+
+.rdf_tl_slider {
+	height: 20px;
+	margin-top: 5px;
+	position: relative
+}
+
+.timeline {
+	background-color: #fff;
+}
+
+/* images */
+
+.rdf_image {
+	border: 1px solid #aaa;
+	margin: auto;
+	padding: 0.3em;
+}
+
+.rdf_image:hover {
+	border: 1px solid #555;
+	cursor: pointer;
+}
+
+/* navigation */
+
+.rdf_nav div {
+	margin: 2px 5px;
+	float: left;
+}
+
+h3.rdf_nav_title {clear: both; font-weight: bold;margin-bottom: 0;}
+
+#rdf_nav_breadcrumbs a { font-size: bigger; text-decoration: none }
+#rdf_nav_breadcrumbs a:hover { text-decoration: underline; }
+
+.rdf_nav_content { float: left; width: 100%}
+
+/* navigation - spotlight table */
+
+.rdf_nav_spotlight {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 0;
+}
+
+.rdf_nav_spotlight td {
+	padding: 2px 3px;
+}
+
+.rdf_nav_header {
+	color: #334;
+	font-weight: bold;
+	background: #fff;
+	height: 25px;
+/*	-moz-border-radius: 9px 9px 0px 0px;
+	-webkit-border-radius: 9px 9px 0px 0px; 
+	border-bottom: 1px solid #fff; */
+	border-top: 1px dotted #aaa;
+	cursor: pointer;
+}
+
+.rdf_nav_desc {
+	font-size: 90%;
+}
+
+.rdf_nav_toggle {
+	color: #59e;
+}
+
+.rdf_nav_toggle .toggler {
+    cursor: pointer;
+}
+/* navigation - links */
+
+.rdf_link {
+	color: inherit;
+	border-bottom: 1px dotted #000;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.rdf_link:hover {
+	border-bottom: 1px solid #000;
+	color: #000;
+}
+
+.rdf_nav_spotlight a {
+	color: inherit;
+}
+
+.rdf_nav_spotlight a:hover {
+	color: #000;
+}
+
+/* tag cloud */
+
+.rdf_tagcloud {
+	width: 50%;
+	font-size: 120%;
+	text-align: justify;
+}
+
+.rdf_tagcloud a {
+	text-decoration: none;
+}
+
+/* fresnel */
+
+.fresnel_property .fresnel_container {
+	display: inline;
+}
+
+.marker_ctr {
+  overflow: hidden;
+}
+
+.marker_ctr .abstract { 
+    font-style: italic;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #666;
+}
+
+.marker_ctr .pred_title {
+    font-weight: bold;
+    width: 100px;
+    margin-right: 1.5em;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.marker_ctr .pred_value img {
+    max-width: 100%
+}
+
+.marker_ctr .props_ctr {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 200px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.marker_cte .props_ctr table {
+    width: 100%;
+}
