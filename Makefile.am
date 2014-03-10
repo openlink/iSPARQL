@@ -1,8 +1,7 @@
 #
-#  This file is part of the OpenLink Software Virtuoso Open-Source (VOS)
-#  project.
+#  This file is part of the iSPARQL Project.
 #
-#  Copyright (C) 1998-2014 OpenLink Software
+#  Copyright (C) 2005-2014 OpenLink Software
 #
 #  This project is free software; you can redistribute it and/or modify it
 #  under the terms of the GNU General Public License as published by the
@@ -17,42 +16,109 @@
 #  with this program; if not, write to the Free Software Foundation, Inc.,
 #  51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
 #
+
+ACLOCAL_AMFLAGS = -I admin
+
+NEED_VERSION	= 05.10.3038
+
 #
-
-TOP=@TOP@
-
-if WITH_ISPARQL_VAD
-nodist_vad_DATA = isparql_dav.vad
-endif
-
-
-noinst_SCRIPTS = make_vad.sh
-CLEANFILES =  \
-	make_isparql_vad.* \
-	isparql*.vad \
-	virtuoso.* \
-	version
-
-isparql_dav.vad: $(EXTRA_DIST)
-	PATH="$(TOP)/binsrc/virtuoso:$(TOP)/binsrc/tests:.:$$PATH" PORT=$(PORT) HOME="$(TOP)" HOST=localhost $(SHELL) ./make_vad.sh
-
-clean-local:
-	-rm -rf vad
-
-# ----------------------------------------------------------------------
+#  Cartridge files
 #
-#  Additional files to distribute
-#
-# ----------------------------------------------------------------------
-EXTRA_DIST = \
+ISPARQL_FILES = \
 	*.html \
 	*.js \
 	*.vsp \
 	images/*.gif \
 	images/*.jpg \
 	images/*.png \
-	make_vad.sh \
+	oat/images/*.gif \
+	oat/images/*.png \
+	oat/images/markers/*.png \
+	oat/styles/*.css \
+	oat/styles/hover.htc \
+	oat/toolkit/*.js \
+	oat/xslt/*.xsl \
 	sql/*.sql \
 	styles/*.css \
-	vad_version \
 	xslt/*.xsl
+
+vad_DATA = isparql_dav.vad
+
+if PACK_DEVEL_VADS
+vad_DATA += isparql_filesystem.vad
+endif
+
+# Rules to create our vads
+isparql_dav.vad: $(ISPARQL_FILES) isparql_sticker.xml Makefile
+	@VADPACKER@ \
+		-o isparql_dav.vad \
+		--var="NEED_VERSION=$(NEED_VERSION)" \
+		--var="VERSION=`@versionp@`" \
+		--var="BASE_PATH=/DAV/VAD" \
+		--var="TYPE=dav" \
+		--var="ISDAV=1" \
+		isparql_sticker.xml
+
+isparql_filesystem.vad: $(ISPARQL_FILES) isparql_sticker.xml Makefile
+	@VADPACKER@ \
+		-o isparql_filesystem.vad \
+		--var="NEED_VERSION=$(NEED_VERSION)" \
+		--var="VERSION=`@versionp@`" \
+		--var="BASE_PATH=/vad/vsp" \
+		--var="TYPE=http" \
+		--var="ISDAV=0" \
+		isparql_sticker.xml
+
+sticker: $(ISPARQL_FILES) isparql_sticker.xml Makefile
+	@VADPACKER@ \
+		--print-sticker \
+		--var="NEED_VERSION=$(NEED_VERSION)" \
+		--var="VERSION=`@versionp@`" \
+		--var="BASE_PATH=/DAV/VAD" \
+		--var="TYPE=dav" \
+		--var="ISDAV=1" \
+		isparql_sticker.xml
+
+CLEANFILES = *.vad
+
+EXTRA_DIST =  \
+	$(ISPARQL_FILES) \
+	autogen.sh \
+	isparql_sticker.xml \
+	oat \
+	vad_version \
+	vadpacker \
+	version
+
+# ----------------------------------------------------------------------
+#
+#  Maintainers only
+#
+# ----------------------------------------------------------------------
+
+MAINTAINERCLEANFILES    = aclocal.m4 configure
+
+
+if MAINTAINER_MODE
+
+#
+#  Create an official release package
+#
+release:
+	$(MAKE) distcheck
+
+#
+#  Create a source snapshot package
+#
+snapshot:
+	$(MAKE) dist distdir=$(PACKAGE)-`date +"%Y%m%d"`
+
+
+#
+#  Generate ChangeLog
+#
+.PHONY: changelog
+changelog:
+	git2cl --since=2009/10/17 --format='%s%n%n%b%n' --strip-tab --strip-cherry-pick > ChangeLog
+
+endif
