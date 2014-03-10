@@ -1,3 +1,12 @@
+/*
+ *  This file is part of the iSPARQL project
+ *
+ *  Copyright (C) 2005-2014 OpenLink Software
+ *
+ *  See LICENSE file for details.
+ *
+ */
+
 if (typeof iSPARQL == 'undefined')
     iSPARQL = {};
 
@@ -179,6 +188,3 @@ iSPARQL.Settings = {
     xslt:'/isparql/xslt/',
     debug:true
 }
-
-
-
