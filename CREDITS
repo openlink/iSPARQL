@@ -1,0 +1,22 @@
+#
+#  CREDITS
+#
+#  This file is part of the iSPARQL project
+#
+#  Copyright (C) 1998-2014 OpenLink Software
+#
+
+Included Functionality
+======================
+
+The iSPARQL project wishes to acknowledge incorporation of code
+from the following projects:
+
+OAT
+<http://sourceforge.net/projects/oat/>
+
+    Virtuoso uses the OpenLink AJAX Toolkit (OAT) in the Data Space
+    application suite.
+
+    OAT is distributed under the terms of the GNU Public License v2:
+    <http://www.gnu.org/copyleft/gpl.html>
