@@ -1,3 +1,11 @@
+/*
+ *  This file is part of the iSPARQL project
+ *
+ *  Copyright (C) 2005-2014 OpenLink Software
+ *
+ *  See LICENSE file for details.
+ *
+ */
 
 function gen_ubiq_meta() {
   var hd = document.getElementsByTagName('head')[0];
