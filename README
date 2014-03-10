@@ -1,0 +1,15 @@
+iSPARQL
+
+Copyright (C) 2005-2014 OpenLink Software 
+
+OpenLink iSPARQL is a utility for building and executing SPARQL
+queries. 
+
+It may be used on any standard SPARQL endpoint but can utilize the
+full power of Virtuoso Sponger when connected to a Virtuoso endpoint.
+
+The queries, together with various parameters may be saved in a
+WebDAV-capable file server.
+
+This code originally was distributed as part of the OpenLink Virtuoso
+Open Source Edition
