@@ -81,7 +81,7 @@ AC_ARG_WITH(
   [])
 
 # version script
-versionp="sh `pwd`/version"
+versionp="sh `pwd`/gen_version.sh"
 
 # Make all required variables available
 AC_SUBST([vaddir])
