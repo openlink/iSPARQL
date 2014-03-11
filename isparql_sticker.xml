@@ -63,7 +63,8 @@
   <file type="$TYPE$" source_uri="oat/images/*.png"             target_uri="iSPARQL/toolkit/images/$f$" />
   <file type="$TYPE$" source_uri="oat/images/markers/*.png"     target_uri="iSPARQL/toolkit/images/markers/$f$" />
   <file type="$TYPE$" source_uri="oat/styles/*.css"             target_uri="iSPARQL/toolkit/styles/$f$" />
-  <file type="$TYPE$" source_uri="oat/xslt/*.xsl"               target_uri="iSPARQL/xslt/$f$" />
+  <file type="$TYPE$" source_uri="oat/styles/*.htc"             target_uri="iSPARQL/toolkit/styles/$f$" />
+  <file type="$TYPE$" source_uri="oat/xslt/*.xsl"               target_uri="iSPARQL/toolkit/xslt/$f$" />
 
 </resources>
 <registry>
