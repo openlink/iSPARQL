@@ -22,6 +22,13 @@ ACLOCAL_AMFLAGS = -I admin
 NEED_VERSION	= 05.10.3038
 
 #
+#  Generated files
+#
+BUILT_SOURCES = \
+	version
+
+
+#
 #  Cartridge files
 #
 ISPARQL_FILES = \
@@ -40,7 +47,8 @@ ISPARQL_FILES = \
 	oat/xslt/*.xsl \
 	sql/*.sql \
 	styles/*.css \
-	xslt/*.xsl
+	xslt/*.xsl \
+	version
 
 vad_DATA = isparql_dav.vad
 
@@ -84,11 +92,14 @@ CLEANFILES = *.vad
 EXTRA_DIST =  \
 	$(ISPARQL_FILES) \
 	autogen.sh \
+	gen_version.sh \
 	isparql_sticker.xml \
 	oat \
-	vad_version \
-	vadpacker \
-	version
+	version \
+	vadpacker
+
+version:
+	$(SHELL) gen_version.sh
 
 # ----------------------------------------------------------------------
 #

@@ -21,6 +21,7 @@ admin/
 
 # We never want vads in the repo
 vad_version
+version
 *.vad
 
 # Do not commit python runtime files

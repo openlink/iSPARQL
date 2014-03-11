@@ -19,14 +19,28 @@
 #
 
 #
+#  Get build date
+#
+BUILD_DATE=`date +"%Y-%m-%d %H:%M"`
+
+#
 #  Generate version number
 #
 # First we try to get the version from the last tag (tag name minus "v" prefix + _gitN where N is the number of commits since the tag)
 GIT_V=`git describe --tags --long --always 2>/dev/null | sed -e 's/-/./' -e 's/-g/-/g' -e 's/^v//'`
 
-# If we are not in a git clone GIT_V will be empty. In that case we use the hard-coded version from vad_version
-if test "X$GIT_V" != "X"; then
-  echo $GIT_V | tee vad_version
-else
-  cat vad_version
+
+#
+# If we are not in a git clone GIT_V will be empty. In that case we use the hard-coded version from version
+#
+if test "X$GIT_V" != "X"
+then
+    echo $GIT_V/$BUILD_DATE > version
 fi
+
+#
+#  Return version without build date
+#
+cat version | sed -e 's,/.*$,,'
+
+exit 0
