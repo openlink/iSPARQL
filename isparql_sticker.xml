@@ -56,6 +56,7 @@
   <file type="$TYPE$" source_uri="images/*.jpg"             	target_uri="iSPARQL/images/$f$" />
   <file type="$TYPE$" source_uri="styles/*.css"             	target_uri="iSPARQL/styles/$f$" />
   <file type="$TYPE$" source_uri="sql/*.sql"             	target_uri="iSPARQL/sql/$f$" />
+  <file type="$TYPE$" source_uri="xslt/*.xsl"             	target_uri="iSPARQL/xslt/$f$" />
 
 <!-- OAT -->
   <file type="$TYPE$" source_uri="oat/toolkit/*.js"             target_uri="iSPARQL/toolkit/$f$" />
