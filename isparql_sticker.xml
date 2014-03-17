@@ -50,12 +50,12 @@
 <!-- iSPARQL -->
   <file type="$TYPE$" source_uri="*.html"             		target_uri="iSPARQL/$f$" />
   <file type="$TYPE$" source_uri="*.vsp"             		target_uri="iSPARQL/$f$" />
-  <file type="$TYPE$" source_uri="*.js"             		target_uri="iSPARQL/$f$" />
   <file type="$TYPE$" source_uri="images/*.gif"             	target_uri="iSPARQL/images/$f$" />
-  <file type="$TYPE$" source_uri="images/*.png"             	target_uri="iSPARQL/images/$f$" />
   <file type="$TYPE$" source_uri="images/*.jpg"             	target_uri="iSPARQL/images/$f$" />
-  <file type="$TYPE$" source_uri="styles/*.css"             	target_uri="iSPARQL/styles/$f$" />
+  <file type="$TYPE$" source_uri="images/*.png"             	target_uri="iSPARQL/images/$f$" />
+  <file type="$TYPE$" source_uri="js/*.js"             		target_uri="iSPARQL/js/$f$" />
   <file type="$TYPE$" source_uri="sql/*.sql"             	target_uri="iSPARQL/sql/$f$" />
+  <file type="$TYPE$" source_uri="styles/*.css"             	target_uri="iSPARQL/styles/$f$" />
   <file type="$TYPE$" source_uri="xslt/*.xsl"             	target_uri="iSPARQL/xslt/$f$" />
 
 <!-- OAT -->

@@ -33,11 +33,11 @@ BUILT_SOURCES = \
 #
 ISPARQL_FILES = \
 	*.html \
-	*.js \
 	*.vsp \
 	images/*.gif \
 	images/*.jpg \
 	images/*.png \
+	js/*.js \
 	oat/images/*.gif \
 	oat/images/*.png \
 	oat/images/markers/*.png \
