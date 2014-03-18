@@ -22,14 +22,14 @@
 
 #menu li {
   cursor: pointer;
-  behavior: url("/isparql/toolkit/styles/hover.htc");
+  behavior: url("/isparql/oat/styles/hover.htc");
   display: block;
   float: left;
   position: relative;
   padding: 3px 8px}
 
 #menu a {
-  behavior: url("/isparql/toolkit/styles/hover.htc");
+  behavior: url("/isparql/oat/styles/hover.htc");
   color: inherit;
   text-decoration: none;
 }

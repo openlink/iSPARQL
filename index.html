@@ -45,7 +45,7 @@ var featureList = ["keyboard","dimmer","tab","ajax","combolist","win","tree","gr
                    "svgsparql","toolbar","dialog","sparql","graphsvg","menu","layers","rdfstore",
 		   "rdfmini","map","json"];
   </script>
-  <script type="text/javascript" src="/isparql/toolkit/loader.js"></script>
+  <script type="text/javascript" src="/isparql/oat/js/loader.js"></script>
   <script type="text/javascript" src="js/defaults.js"></script>
   <script type="text/javascript" src="js/statusui.js"></script>
   <script type="text/javascript" src="js/error.js"></script>
@@ -61,8 +61,8 @@ var featureList = ["keyboard","dimmer","tab","ajax","combolist","win","tree","gr
 // XXX should be done in defaults.js
 
 function myInit() {
-  OAT.Preferences.imagePath = '/isparql/toolkit/images/';
-  OAT.Preferences.stylePath = '/isparql/toolkit/styles/';
+  OAT.Preferences.imagePath = '/isparql/oat/images/';
+  OAT.Preferences.stylePath = '/isparql/oat/styles/';
 
   /* load stylesheets */
   OAT.Style.include("grid.css");
@@ -88,7 +88,7 @@ OAT.MSG.attach(OAT, 'OAT_LOAD', myInit);
         <div class="msg" id="statMsgMain">iSPARQL Initialization</div>
         <div class="msg" id="statMsgElem">Loading</div>
 	
-        <img src="/isparql/toolkit/images/throbber.gif" id="splashThrobber" style="display:none"/>
+        <img src="/isparql/oat/images/throbber.gif" id="splashThrobber" style="display:none"/>
 
         <noscript>
           <img src="/isparql/images/stop_32.png" alt="error"/>
@@ -115,7 +115,7 @@ OAT.MSG.attach(OAT, 'OAT_LOAD', myInit);
         <div id="locAcquireMsg">
           <div id="locAcquireTitleC">
 		    <h3 id="locAcquireTitleT">Locating</h3>
-            <img id="locAcquireThrobber" alt="throbber" src="/isparql/toolkit/images/throbber_small.gif"/>
+            <img id="locAcquireThrobber" alt="throbber" src="/isparql/oat/images/throbber_small.gif"/>
           </div>
           <table id="locAcquireCurrent">
             <tr>

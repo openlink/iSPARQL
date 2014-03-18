@@ -16,7 +16,7 @@ var tab_results = {};
 var page_w = 800;
 var page_h = 800;
 
-if (typeof(toolkitImagesPath) == 'undefined') var toolkitImagesPath = "/isparql/toolkit/images/";
+if (typeof(toolkitImagesPath) == 'undefined') var toolkitImagesPath = "/isparql/oat/images/";
 OAT.Preferences.imagePath = toolkitImagesPath;
 
 /*
@@ -27,8 +27,8 @@ OAT.Preferences.imagePath = toolkitImagesPath;
 
 function init() {
     try {
-	OAT.Preferences.imagePath = '/isparql/toolkit/images/';
-	OAT.Preferences.stylePath = '/isparql/toolkit/styles/';
+	OAT.Preferences.imagePath = '/isparql/oat/images/';
+	OAT.Preferences.stylePath = '/isparql/oat/styles/';
 
 
 	iSPARQL.StatusUI.init();

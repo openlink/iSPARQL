@@ -59,13 +59,13 @@
   <file type="$TYPE$" source_uri="xslt/*.xsl"             	target_uri="iSPARQL/xslt/$f$" />
 
 <!-- OAT -->
-  <file type="$TYPE$" source_uri="oat/toolkit/*.js"             target_uri="iSPARQL/toolkit/$f$" />
-  <file type="$TYPE$" source_uri="oat/images/*.gif"             target_uri="iSPARQL/toolkit/images/$f$" />
-  <file type="$TYPE$" source_uri="oat/images/*.png"             target_uri="iSPARQL/toolkit/images/$f$" />
-  <file type="$TYPE$" source_uri="oat/images/markers/*.png"     target_uri="iSPARQL/toolkit/images/markers/$f$" />
-  <file type="$TYPE$" source_uri="oat/styles/*.css"             target_uri="iSPARQL/toolkit/styles/$f$" />
-  <file type="$TYPE$" source_uri="oat/styles/*.htc"             target_uri="iSPARQL/toolkit/styles/$f$" />
-  <file type="$TYPE$" source_uri="oat/xslt/*.xsl"               target_uri="iSPARQL/toolkit/xslt/$f$" />
+  <file type="$TYPE$" source_uri="oat/js/*.js"             	target_uri="iSPARQL/oat/js/$f$" />
+  <file type="$TYPE$" source_uri="oat/images/*.gif"             target_uri="iSPARQL/oat/images/$f$" />
+  <file type="$TYPE$" source_uri="oat/images/*.png"             target_uri="iSPARQL/oat/images/$f$" />
+  <file type="$TYPE$" source_uri="oat/images/markers/*.png"     target_uri="iSPARQL/oat/images/markers/$f$" />
+  <file type="$TYPE$" source_uri="oat/styles/*.css"             target_uri="iSPARQL/oat/styles/$f$" />
+  <file type="$TYPE$" source_uri="oat/styles/*.htc"             target_uri="iSPARQL/oat/styles/$f$" />
+  <file type="$TYPE$" source_uri="oat/xslt/*.xsl"               target_uri="iSPARQL/oat/xslt/$f$" />
 
 </resources>
 <registry>

@@ -43,7 +43,7 @@ ISPARQL_FILES = \
 	oat/images/markers/*.png \
 	oat/styles/*.css \
 	oat/styles/hover.htc \
-	oat/toolkit/*.js \
+	oat/js/*.js \
 	oat/xslt/*.xsl \
 	sql/*.sql \
 	styles/*.css \

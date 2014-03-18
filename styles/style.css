@@ -7,8 +7,8 @@
  *
  */
 
-@import url("/isparql/toolkit/styles/grid.css");
-@import url("/isparql/toolkit/styles/webdav.css");
+@import url("/isparql/oat/styles/grid.css");
+@import url("/isparql/oat/styles/webdav.css");
 @import url("/isparql/styles/menu.css");
 @import url("/isparql/styles/dialog.css");
 @import url("/isparql/styles/qbe.css");

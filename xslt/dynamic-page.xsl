@@ -17,7 +17,7 @@
 	<html>
 	<head>
 		<script type="text/javascript">var featureList = ["xml"];</script>
-		<script type="text/javascript" src="/isparql/toolkit/loader.js"></script>
+		<script type="text/javascript" src="/isparql/oat/loader.js"></script>
 		<script type="text/javascript">
 			function init() {
 				var target = "/isparql/execute.html";
