@@ -21,7 +21,7 @@
 #AC_PREREQ(2.60)
 AC_INIT(
 	[iSPARQL],
-	[1.30-dev],
+	[1.30],
 	[opensource@openlinksw.com],
 	[isparql])
 AC_CONFIG_AUX_DIR(admin)
