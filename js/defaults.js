@@ -127,7 +127,7 @@ iSPARQL.Defaults = {
 	    onstart: function () { return; }
 	};
 
-	OAT.AJAX.GET ('/isparql/defaults/',
+	OAT.AJAX.GET ('/isparql/defaults',
 		      '',
 		      function(data, headers) {
 			  iSPARQL.serverDefaults = OAT.JSON.parse(data);

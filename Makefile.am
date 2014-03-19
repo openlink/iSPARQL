@@ -95,6 +95,7 @@ EXTRA_DIST =  \
 	gen_version.sh \
 	isparql_sticker.xml \
 	oat \
+	defaults \
 	version \
 	vadpacker
 
