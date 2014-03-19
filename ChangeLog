@@ -1,4 +1,44 @@
-2014-03-10  Patrick van Kleef  <pkleef@openlinksw.com>
+2014-03-19  Patrick van Kleef  <pkleef@openlinksw.com>
+
+	Updated version to 1.30 for final release
+
+	Fixed version information
+
+	Fixed typo
+
+	Fixed only use /proxy construction against a virtuoso http server
+
+	Fixed initialization if ajax call fails to find defaults
+
+	Fixed detect server properties on connect
+
+	Added support for defaults on standalone installation of iSPARQL
+
+2014-03-18  Patrick van Kleef  <pkleef@openlinksw.com>
+
+	Updated directory layout so VAD and filesystem installations match
+
+2014-03-17  Patrick van Kleef  <pkleef@openlinksw.com>
+
+	Move javascript files into js/ subdir
+
+	Added missing file to vad
+
+2014-03-11  Patrick van Kleef  <pkleef@openlinksw.com>
+
+	Fixed handling of ./version information
+
+	Added missing files from toolkit
+
+	Added initial build environment to make the iSPARQL VAD package
+
+	Added initial sticker file for packaging
+
+	Added initial files to ignore
+
+	Added initial project documentation
+
+	Added license information
 
 	Fixed copyright comments
 
