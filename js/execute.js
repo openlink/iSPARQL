@@ -466,7 +466,7 @@ var QueryExec = function(optObj) {
 			}
 		}
 
-	if (opts.endpoint.match(/^http/i)) {
+	if (iSPARQL.serverConn.isVirtuoso && opts.endpoint.match(/^http/i)) {
 	    var req = "url=" + encodeURIComponent(opts.endpoint + "?" + arr.join ("&"));
 	    opts.endpoint = "/proxy";
 	    return req;
