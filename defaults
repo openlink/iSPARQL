@@ -1,5 +1,5 @@
 {
-    "graph": ""
+    "graph": "",
     "query": "select distinct ?Concept where {[] a ?Concept} LIMIT 100",
 
     "auth": {
