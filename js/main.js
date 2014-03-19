@@ -1354,15 +1354,9 @@ iSPARQL.ServerConnection = function (uri, authObj) {
 			  }
 			  else {
 			      self.isVirtuoso = false;
-			      self.serverVersion = false;
-			      self.serverBuildDate = false;
 			  }
-
-			  var tmp = data.split("/");
-
-			  if (tmp && tmp.length > 1) {
-			      self.serverVersion = tmp[0];// XXX not server version and build
-			      self.serverBuildDate = tmp[1];
+			  if (data && data.length > 1) {
+			      iSPARQL.Settings.isparql_version = data;
 			  }
 		      		  },
 		      		  {async:false, onstart:function(){return}});
@@ -1499,25 +1493,6 @@ iSPARQL.Common = {
 							  localStorage.iSPARQL_UserPreferences = OAT.JSON.serialize(iSPARQL.UserPreferences);
 							  OAT.MSG.send (self,"iSPARQL_USER_PREF_CHANGE",false);
 						  });
-
-/*		if (iSPARQL.serverConn.isConnected) {
-	if (iSPARQL.serverConn.isVirtuoso) {
-	    $('about_version').innerHTML = iSPARQL.serverConn.serverVersion;
-	    $('about_date').innerHTML = iSPARQL.serverConn.serverBuildDate;
-	}
-	else {
-	    $('about_version').innerHTML = 'N/A (Not Virtuoso)';
-	    $('about_date').innerHTML =  'N/A (Not Virtuoso)';
-	}
-		}
-		else {
-			$('about_version').innerHTML = 'unknown';
-			$('about_date').innerHTML = 'unknown';
-		} */
-
-		if (iSPARQL.Settings.sparqlCxmlInstalled) {
-			OAT.Dom.show ('cxml_raw_lnk_c');
-		}
 
         $('about_version').innerHTML = iSPARQL.Settings.isparql_version;
 	$('about_oat_version').innerHTML = OAT.Preferences.version;

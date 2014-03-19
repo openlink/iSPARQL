@@ -35,12 +35,12 @@ GIT_V=`git describe --tags --long --always 2>/dev/null | sed -e 's/-/./' -e 's/-
 #
 if test "X$GIT_V" != "X"
 then
-    echo $GIT_V/$BUILD_DATE > version
+    echo $GIT_V > version
 fi
 
 #
 #  Return version without build date
 #
-cat version | sed -e 's,/.*$,,'
+cat version
 
 exit 0
