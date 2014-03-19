@@ -3,11 +3,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <!--
 
-  $Id$
+  This file is part of the iSPARQL project
 
-  This file is part of the OpenLink Ajax Toolkit (OAT) project
-
-  Copyright (C) 2009-2014 OpenLink Software
+  Copyright (C) 2005-2014 OpenLink Software
 
   This project is free software; you can redistribute it and/or modify it
   under the terms of the GNU General Public License as published by the
@@ -47,24 +45,24 @@ var featureList = ["keyboard","dimmer","tab","ajax","combolist","win","tree","gr
                    "svgsparql","toolbar","dialog","sparql","graphsvg","menu","layers","rdfstore",
 		   "rdfmini","map","json"];
   </script>
-  <script type="text/javascript" src="/isparql/toolkit/loader.js"></script>
-  <script type="text/javascript" src="defaults.js"></script>
-  <script type="text/javascript" src="statusui.js"></script>
-  <script type="text/javascript" src="error.js"></script>
-  <script type="text/javascript" src="location.js"></script>
-  <script type="text/javascript" src="io.js"></script>
-  <script type="text/javascript" src="execute.js"></script>
-  <script type="text/javascript" src="main.js"></script>
-  <script type="text/javascript" src="qbe.js"></script>
-  <script type="text/javascript" src="ubiq.js"></script>
+  <script type="text/javascript" src="/isparql/oat/js/loader.js"></script>
+  <script type="text/javascript" src="js/defaults.js"></script>
+  <script type="text/javascript" src="js/statusui.js"></script>
+  <script type="text/javascript" src="js/error.js"></script>
+  <script type="text/javascript" src="js/location.js"></script>
+  <script type="text/javascript" src="js/io.js"></script>
+  <script type="text/javascript" src="js/execute.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/qbe.js"></script>
+  <script type="text/javascript" src="js/ubiq.js"></script>
 
   <script type="text/javascript">
 
 // XXX should be done in defaults.js
 
 function myInit() {
-  OAT.Preferences.imagePath = '/isparql/toolkit/images/';
-  OAT.Preferences.stylePath = '/isparql/toolkit/styles/';
+  OAT.Preferences.imagePath = '/isparql/oat/images/';
+  OAT.Preferences.stylePath = '/isparql/oat/styles/';
 
   /* load stylesheets */
   OAT.Style.include("grid.css");
@@ -90,7 +88,7 @@ OAT.MSG.attach(OAT, 'OAT_LOAD', myInit);
         <div class="msg" id="statMsgMain">iSPARQL Initialization</div>
         <div class="msg" id="statMsgElem">Loading</div>
 	
-        <img src="/isparql/toolkit/images/throbber.gif" id="splashThrobber" style="display:none"/>
+        <img src="/isparql/oat/images/throbber.gif" id="splashThrobber" style="display:none"/>
 
         <noscript>
           <img src="/isparql/images/stop_32.png" alt="error"/>
@@ -106,7 +104,7 @@ OAT.MSG.attach(OAT, 'OAT_LOAD', myInit);
 
         <div class="error" id="statMsgErr"></div>
 	<div id="splash_ver"></div>
-        <div id="splash_copyr">Copyright &copy; 2006-2014 OpenLink Software</div>
+        <div id="splash_copyr">Copyright &copy; 2005-2014 OpenLink Software</div>
 
         <div id="splash_foot" class="opl_motto">Making Technology Work For You &trade;</div>
       </div> <!-- #splash_inner -->
@@ -117,7 +115,7 @@ OAT.MSG.attach(OAT, 'OAT_LOAD', myInit);
         <div id="locAcquireMsg">
           <div id="locAcquireTitleC">
 		    <h3 id="locAcquireTitleT">Locating</h3>
-            <img id="locAcquireThrobber" alt="throbber" src="/isparql/toolkit/images/throbber_small.gif"/>
+            <img id="locAcquireThrobber" alt="throbber" src="/isparql/oat/images/throbber_small.gif"/>
           </div>
           <table id="locAcquireCurrent">
             <tr>
@@ -548,7 +546,7 @@ WHERE     {	?thing a ?type;
             &nbsp;Bookmarklet - drag this link to your browser's bookmark bar: <a id="isparql_bookmarklet_a" href="javascript:(function(){location='http://www.openlinksw.com/';})();">iSPARQL</a> <a id="sparql_bookmarklet_a" href="" style="display:none">SPARQL</a>
         </div> <!-- #foot_l -->
           <div class="foot_r" id="foot_r">
-            iSPARQL Copyright &copy; 2006-2014 OpenLink Software<br/><span id="ft_loc"></span><br/>
+            iSPARQL Copyright &copy; 2005-2014 OpenLink Software<br/><span id="ft_loc"></span><br/>
         </div>
 	<div id="stats"></div> <!-- stats -->
       </div> <!-- #foot -->

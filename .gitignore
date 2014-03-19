@@ -1,6 +1,32 @@
-make_isparql_vad.log
-make_isparql_vad.xml
-isparql*.vad
-virtuoso.*
-toolkit*
+# Junk from the build system
+Makefile
+Makefile.in
+aclocal.m4
+autom4te.cache
+config.log
+config.status
+configure
+install-sh
+missing
+config.guess
+config.sub
+depcomp
+libtool
+ltmain.sh
+*.o
+*.lo
+*.la
+autogen.log
+admin/
+ChangeLog
+
+# We never want vads in the repo
+vad_version
 version
+*.vad
+
+# Do not commit python runtime files
+*.pyc
+
+# Do not commit any dist file
+*.tar.*

@@ -1,11 +1,9 @@
 <?xml version="1.0" ?>
 <!--
 
-  $Id$
+  This file is part of the iSPARQL project
 
-  This file is part of the OpenLink Software Ajax Toolkit (OAT) project.
-
-  Copyright (C) 2009-2014 OpenLink Software
+  Copyright (C) 2005-2014 OpenLink Software
 
   See LICENSE file for details.
 
@@ -19,7 +17,7 @@
 	<html>
 	<head>
 		<script type="text/javascript">var featureList = ["xml"];</script>
-		<script type="text/javascript" src="/isparql/toolkit/loader.js"></script>
+		<script type="text/javascript" src="/isparql/oat/loader.js"></script>
 		<script type="text/javascript">
 			function init() {
 				var target = "/isparql/execute.html";

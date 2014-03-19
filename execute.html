@@ -3,11 +3,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <!--
 
-  $Id$
+  This file is part of the iSPARQL project
 
-  This file is part of the OpenLink Ajax Toolkit (OAT) project
-
-  Copyright (C) 2009-2014 OpenLink Software
+  Copyright (C) 2005-2014 OpenLink Software
 
   This project is free software; you can redistribute it and/or modify it
   under the terms of the GNU General Public License as published by the
@@ -37,7 +35,7 @@ function init() {
 
   OAT.Dom.hide("result");
   OAT.Event.attach("throbber","click",OAT.AJAX.cancelAll);
-  OAT.Preferences.imagePath = "/isparql/toolkit/images/";
+  OAT.Preferences.imagePath = "/isparql/oat/images/";
 
   iSPARQL.Defaults.init();
 
@@ -88,12 +86,12 @@ function init() {
 }
   </script>
 
-  <script type="text/javascript" src="defaults.js"></script>
-  <script type="text/javascript" src="statusui.js"></script>
-  <script type="text/javascript" src="error.js"></script>
-  <script type="text/javascript" src="execute.js"></script>
-  <script type="text/javascript" src="location.js"></script>
-  <script type="text/javascript" src="/isparql/toolkit/loader.js"></script>
+  <script type="text/javascript" src="js/defaults.js"></script>
+  <script type="text/javascript" src="js/statusui.js"></script>
+  <script type="text/javascript" src="js/error.js"></script>
+  <script type="text/javascript" src="js/execute.js"></script>
+  <script type="text/javascript" src="js/location.js"></script>
+  <script type="text/javascript" src="/isparql/oat/js/loader.js"></script>
 
   <meta name="viewport" content="width = device-width"/>
 
@@ -103,7 +101,7 @@ function init() {
 
   <link type="text/css" rel="stylesheet" href="/isparql/styles/execute.css"/>
   <link type="text/css" rel="stylesheet" href="/isparql/styles/dialog.css"/>
-  <link type="text/css" rel="stylesheet" href="/isparql/toolkit/styles/winrect.css"/>
+  <link type="text/css" rel="stylesheet" href="/isparql/oat/styles/winrect.css"/>
   <link media="only screen and (max-device-width: 480px)" 
         type="text/css" 
 	rel="stylesheet" 
@@ -121,7 +119,7 @@ function init() {
       <div class="msg" id="statMsgMain">iSPARQL Initialization</div>
       <div class="msg" id="statMsgElem">Loading</div>
 	
-      <img src="/isparql/toolkit/images/throbber.gif" id="splashThrobber" style="display:none"/>
+      <img src="/isparql/oat/images/throbber.gif" id="splashThrobber" style="display:none"/>
 
       <noscript>
         <img src="/isparql/images/stop_32.png" alt="error"/>
@@ -134,7 +132,7 @@ function init() {
       <img src="/isparql/images/stop_32.png" alt="error" id="splashErrorImg" style="display:none"/>
       <div class="error" id="statMsgErr"></div>
       <div id="splash_ver"></div>
-      <div id="splash_copyr">Copyright &copy; 2006-2014 OpenLink Software</div>
+      <div id="splash_copyr">Copyright &copy; 2005-2014 OpenLink Software</div>
       <div id="splash_foot" class="opl_motto">Making Technology Work For You &trade;</div>
     </div> <!-- #splash_inner -->
   </div> <!-- #splash -->
@@ -144,7 +142,7 @@ function init() {
       <div id="locAcquireMsg">
         <div id="locAcquireTitleC">
 	  <h3 id="locAcquireTitleT">Locating</h3>
-          <img id="locAcquireThrobber" alt="throbber" src="/isparql/toolkit/images/throbber_small.gif"/>
+          <img id="locAcquireThrobber" alt="throbber" src="/isparql/oat/images/throbber_small.gif"/>
         </div>
         <table id="locAcquireCurrent">
           <tr>
@@ -190,7 +188,7 @@ function init() {
       ODATA (<a id="odata_atom_lnk">Atom</a> | <a id="odata_json_lnk">JSON</a>)
     </div>
     <div class="foot_r" id="foot_r">
-      Copyright &copy; 2006-2014 OpenLink Software<br/><span id="ft_loc"></span><br/>
+      Copyright &copy; 2005-2014 OpenLink Software<br/><span id="ft_loc"></span><br/>
   </div>
     <div id="stats"></div> <!-- stats -->
   </div> <!-- #foot -->
