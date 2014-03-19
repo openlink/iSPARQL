@@ -1290,6 +1290,7 @@ iSPARQL.ServerConnection = function (uri, authObj) {
     this._init = function () {
 	self.loadAuth ();
 	self.connect (self.authObj.user, self.authObj.pass);
+	self.detectServerProperties ();
         return;
     }
 
@@ -1313,8 +1314,6 @@ iSPARQL.ServerConnection = function (uri, authObj) {
 	    				 user:self.authObj.user,
 	    				 pass:self.authObj.password, 
 	    				 isDav:true});
-		
-		self.detectServerProperties ();
 		
 		OAT.MSG.send (self, "iSPARQL_SERVER_CONNECTED", self);
 	}
