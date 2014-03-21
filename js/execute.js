@@ -682,7 +682,7 @@ var QueryExec = function(optObj) {
 		var plnk_a = OAT.Dom.create("a");
 
 		plnk_a.target = "_blank";
-		plnk_a.href= nloca.protocol + "//" + nloca.host + "/isparql/view/" + xparm;
+		plnk_a.href= nloca.protocol + "//" + nloca.host + "/isparql/execute.html" + xparm;
 		plnk_a.innerHTML = "Permalink"
 
 		if (iSPARQL.Settings.shorten_uris) 
@@ -711,7 +711,7 @@ var QueryExec = function(optObj) {
 		
 		plnk.target = "_blank";
 
-		var _u = nloca.protocol + "//" + nloca.host + "/isparql/view/" + xparm;
+		var _u = nloca.protocol + "//" + nloca.host + "/isparql/execute.html" + xparm;
 		var _t = 'iSPARQL execute';
 
 		try {
@@ -958,7 +958,7 @@ var QueryExec = function(optObj) {
 		xparm += "&amode=" + iSPARQL.Settings.anchorMode;
 		xparm += "&raw_iris=" + iSPARQL.Settings.raw_iris;
 
-	execURIa.href = nloca.protocol + "//" + nloca.host + "/isparql/view/" + xparm;
+		execURIa.href = nloca.protocol + "//" + nloca.host + "/isparql/execute.html" + xparm;
 	
 		if (iSPARQL.Settings.shorten_uris) 
 			iSPARQL.Common.shortenURI (execURIa);
