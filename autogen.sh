@@ -127,6 +127,7 @@ echo "${B}Generating build scripts${N} ..."
 
 mkdir -p admin
 
+RUN touch ChangeLog
 RUN aclocal -I admin
 RUN automake --copy --add-missing
 RUN autoconf
