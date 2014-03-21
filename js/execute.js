@@ -466,11 +466,11 @@ var QueryExec = function(optObj) {
 			}
 		}
 
-	if (iSPARQL.serverConn.isVirtuoso && opts.endpoint.match(/^http/i)) {
-	    var req = "url=" + encodeURIComponent(opts.endpoint + "?" + arr.join ("&"));
-	    opts.endpoint = "/proxy";
-	    return req;
-	}
+	//if (iSPARQL.serverConn.isVirtuoso && opts.endpoint.match(/^http/i)) {
+	    //var req = "url=" + encodeURIComponent(opts.endpoint + "?" + arr.join ("&"));
+	    //opts.endpoint = "/proxy";
+	    //return req;
+	//}
 
 	 arr.push (encodeURIComponent("format=application/rdf+xml"));
 	return arr.join("&");
