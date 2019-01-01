@@ -3,7 +3,7 @@
 #  Calculate version number for vad package based on the number of
 #  commits since the last release
 #
-#  Copyright (C) 2018 OpenLink Software
+#  Copyright (C) 2019 OpenLink Software
 #
 
 export LC_ALL=C
