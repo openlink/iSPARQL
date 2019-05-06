@@ -19,7 +19,7 @@
 
 ACLOCAL_AMFLAGS = -I admin
 
-NEED_VERSION	= 05.10.3038
+NEED_VERSION	= 06.04.3143
 
 #
 #  Generated files
