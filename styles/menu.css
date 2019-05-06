@@ -8,30 +8,32 @@
  */
 
 #menu {
-  font: menu;
-  background-color: #fff;
-  background:-moz-linear-gradient(top , #666666, #DDDDDD);
-  background:-webkit-gradient(linear,left top,left bottom,from(#666666), to(#DDDDDD));
-  list-style-type: none;
-  height: 20px;
-  border-bottom: 1px solid #aaa;
-  z-index: 900;
-  left: 0px;
-  top: 0px;
-  width: 100%}
+    font: menu;
+    background-color: #fff;
+    background: -moz-linear-gradient(top, #666666, #DDDDDD);
+    background: -webkit-gradient(linear, left top, left bottom, from(#666666), to(#DDDDDD));
+    list-style-type: none;
+    height: 20px;
+    border-bottom: 1px solid #aaa;
+    z-index: 900;
+    left: 0px;
+    top: 0px;
+    width: 100%
+}
 
 #menu li {
-  cursor: pointer;
-  behavior: url("/isparql/oat/styles/hover.htc");
-  display: block;
-  float: left;
-  position: relative;
-  padding: 3px 8px}
+    cursor: pointer;
+    behavior: url("/isparql/oat/styles/hover.htc");
+    display: block;
+    float: left;
+    position: relative;
+    padding: 3px 8px
+}
 
 #menu a {
-  behavior: url("/isparql/oat/styles/hover.htc");
-  color: inherit;
-  text-decoration: none;
+    behavior: url("/isparql/oat/styles/hover.htc");
+    color: inherit;
+    text-decoration: none;
 }
 
 /*#menu li:hover, #menu li.hover, #menu a:hover, #menu a.hover {
@@ -39,43 +41,50 @@
   background-color: blue
 }*/
 
-#menu .disabled { color: #ddd }
+#menu .disabled {
+    color: #ddd
+}
 
 #menu ul {
-  position: absolute;
-  background-color: #eee;
-  left: 0px;
-  top: 20px;
-  _top: 22px;
-  width: 100px;
-  padding: 2px;
-  z-index: 999}
+    position: absolute;
+    background-color: #eee;
+    left: 0px;
+    top: 20px;
+    _top: 22px;
+    width: 100px;
+    padding: 2px;
+    z-index: 999
+}
 
 #menu ul li {
-  display: block;
-  padding: 4px 6px;
-  top: 0px;
-  float: none}
+    display: block;
+    padding: 4px 6px;
+    top: 0px;
+    float: none
+}
 
 #menu .hr {
-  margin: 0px;
-  padding: 0px}
+    margin: 0px;
+    padding: 0px
+}
 
 
 #menu .menu_help {
-  width: 200px;
+    width: 200px;
 }
 
 #menu .menu_view {
-  width: 120px;
+    width: 120px;
 }
 
 #menu .menu_isparql {
-  width: 120px;
+    width: 120px;
 }
 
 #menu .menu_qbe {
-  width: 120px;
+    width: 120px;
 }
 
-#login_indicator { float: right;}
+#login_indicator {
+    float: right;
+}
