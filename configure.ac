@@ -1,7 +1,7 @@
 #
 #  This file is part of the iSPARQL project.
 #
-#  Copyright (C) 2005-2014 OpenLink Software
+#  Copyright (C) 2005-2019 OpenLink Software
 #
 #  This project is free software; you can redistribute it and/or modify it
 #  under the terms of the GNU General Public License as published by the
@@ -21,7 +21,7 @@
 #AC_PREREQ(2.60)
 AC_INIT(
 	[iSPARQL],
-	[1.30],
+	[1.50],
 	[opensource@openlinksw.com],
 	[isparql])
 AC_CONFIG_AUX_DIR(admin)

@@ -1,187 +1,198 @@
 /*
  *  This file is part of the iSPARQL project
  *
- *  Copyright (C) 2005-2014 OpenLink Software
+ *  Copyright (C) 2005-2019 OpenLink Software
  *
  *  See LICENSE file for details.
  *
  */
 
 #qbe_toolbar label {
-  float: left;
-  margin: 6px;
-  color: #444;
-  font-size: 10pt;
-  font-weight: normal;
+    float: left;
+    margin: 6px;
+    color: #444;
+    font-size: 10pt;
+    font-weight: normal;
 }
 
 #qbe_datasource_cnt {
-  float: left;
-  margin-top:16px;
+    float: left;
+    margin-top: 16px;
 }
 
 #qbe_datasource_graph_add {
-  float: left;
-  margin: 6px;
-  cursor:pointer;
+    float: left;
+    margin: 6px;
+    cursor: pointer;
 }
 
 #qbe_graph {
-  float: left;
-  /*width: 250px;*/
-  margin: 4px;
+    float: left;
+    /*width: 250px;*/
+    margin: 4px;
 }
 
 #page_qbe .toolbar_icon_down {
-  border: 1px inset #0e0;
+    border: 1px inset #0e0;
 }
 
 #qbe_canvas {
-  height: 410px;
-  margin-bottom:10px;
+    height: 410px;
+    margin-bottom: 10px;
 }
 
 #qbe_query_div {
-  margin-right:285px;
-  padding:10px;
-  padding-top:0px;
+    margin-right: 285px;
+    padding: 10px;
+    padding-top: 0px;
 }
 
-#qbe_resizer_area, #query_resizer_area {
-  float: right;
-  width: 10px;
-  height: 10px;
-  z-index: 100;
-  font-size: 1px;
-  clear: both;
+#qbe_resizer_area,
+#query_resizer_area {
+    float: right;
+    width: 10px;
+    height: 10px;
+    z-index: 100;
+    font-size: 1px;
+    clear: both;
 }
 
 #qbe_parent {
-  width: 100%;
-  height: 400px;
-  background-color: #fff;
-  border: 1px solid #888;
+    width: 100%;
+    height: 400px;
+    background-color: #fff;
+    border: 1px solid #888;
 }
 
-#div.schemas { overflow: hidden }
+#div.schemas {
+    overflow: hidden
+}
 
 #schemas_tree_container {
-  clear: both;
-  margin: 0;
-  padding: 0;
-  padding: 0;
-  height: 240px;
-  overflow: auto;
-  position:relative; /* Fix for dragging */
+    clear: both;
+    margin: 0;
+    padding: 0;
+    padding: 0;
+    height: 240px;
+    overflow: auto;
+    position: relative;
+    /* Fix for dragging */
 }
 
 #schemas_tree_container ul {
-  clear: both;
-  margin: 0;
-  margin-left: 10px;
-  padding: 0;
+    clear: both;
+    margin: 0;
+    margin-left: 10px;
+    padding: 0;
 }
 
 ul#schemas_tree {
-  margin-left: 0px;
+    margin-left: 0px;
 }
 
 #schemas_tree_container li {
-  clear: both;
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-  white-space:nowrap;
+    clear: both;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    white-space: nowrap;
 }
 
 #schemas_tree_container ul.tree_ul_1 {
-  margin: 0px;
-  padding: 0px}
-
-#schemas_tree_container li.tree_li_1 {
-  margin: 0px;
-  padding: 0px}
-
-#schemas_tree_container li.tree_li_4{
-  cursor: pointer}
-
-#schema {
-  width: 210px;
+    margin: 0px;
+    padding: 0px
 }
 
-#qbe_orders
-{
-  padding: 1px;
-  margin-bottom:10px;
-  background-color: #fff;
-  border: 1px solid #888;
+#schemas_tree_container li.tree_li_1 {
+    margin: 0px;
+    padding: 0px
+}
+
+#schemas_tree_container li.tree_li_4 {
+    cursor: pointer
+}
+
+#schema {
+    width: 210px;
+}
+
+#qbe_orders {
+    padding: 1px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #888;
 }
 
 #qbe_orderby_grid .grid .header_value {
-  cursor: pointer;
-  border: 1px outset #fff;
-  padding: 2px 3px;
-  padding-right: 15px;
+    cursor: pointer;
+    border: 1px outset #fff;
+    padding: 2px 3px;
+    padding-right: 15px;
 }
 
 #qbe_props {
-  padding: 2px;
-  float: left;
-  clear: left;
-  width: 98%;
+    padding: 2px;
+    float: left;
+    clear: left;
+    width: 98%;
 }
 
 #qbe_props_common {
-  margin-top: 4px;
-  float: left;
-  clear: left;
-  width: 100%;
+    margin-top: 4px;
+    float: left;
+    clear: left;
+    width: 100%;
 }
 
 #qbe_props input[type=checkbox] {
-  margin-left: 78px;
-  float: left;
-  clear: left;
+    margin-left: 78px;
+    float: left;
+    clear: left;
 }
 
 #qbe_props_node,
 #qbe_props_edge {
-  float: left;
-  clear: left;
+    float: left;
+    clear: left;
 }
 
 #qbe_props label {
-  width:75px;
-  float: left;
-  clear: left;
-  margin-right: 3px;
+    width: 75px;
+    float: left;
+    clear: left;
+    margin-right: 3px;
 }
 
-#qbe_props label.ckb { clear: none;}
+#qbe_props label.ckb {
+    clear: none;
+}
+
 #qbe_props input[type=text] {
-  width:145px;
+    width: 145px;
 }
 
-#qbe_props_visible {
+#qbe_props_visible {}
+
+#qbe_props_visible input {
+    margin: 0
 }
 
-#qbe_props_visible input { margin: 0 }
+#qbe_props_orderby {}
 
 #qbe_props_orderby {
+    margin: 0
 }
 
-#qbe_props_orderby { margin: 0 }
-
 #schemas button {
- margin-top: 3px;
- width:110px;
- height:26px;
+    margin-top: 3px;
+    width: 110px;
+    height: 26px;
 }
 
 #qbe_service_div {
-  display:inline;
+    display: inline;
 }
 
 #qbe_service_div input {
-  width:300px;
+    width: 300px;
 }

@@ -1,7 +1,7 @@
 /*
  *  This file is part of the iSPARQL project
  *
- *  Copyright (C) 2005-2014 OpenLink Software
+ *  Copyright (C) 2005-2019 OpenLink Software
  *
  *  See LICENSE file for details.
  *
@@ -9,7 +9,7 @@
 
 if (typeof iSPARQL == 'undefined') iSPARQL = {};
 
-iSPARQL.Exception = function (where, parm, prev) {
+iSPARQL.Exception = function(where, parm, prev) {
     var self = this;
     this._where = where;
     this._parm = parm;
@@ -19,22 +19,30 @@ iSPARQL.Exception = function (where, parm, prev) {
     this._iSPARQL_ex_type = "";
     if (prev) this._previousException = prev;
 
-    this.getType = function () { return self._type; };
-    this.getLongMsg = function () { return self._longMsg; };
-    this.getShortMsg = function () { return self._shortMsg; };
-    this.isFatal = function () { return self._fatalFlag; };
-    this.toString = function () {
-	return ("Exception: " + self._type + "\n" + self._shortMsg + "\n" + self._longMsg);
+    this.getType = function() {
+        return self._type;
+    };
+    this.getLongMsg = function() {
+        return self._longMsg;
+    };
+    this.getShortMsg = function() {
+        return self._shortMsg;
+    };
+    this.isFatal = function() {
+        return self._fatalFlag;
+    };
+    this.toString = function() {
+        return ("Exception: " + self._type + "\n" + self._shortMsg + "\n" + self._longMsg);
     }
 };
 
 iSPARQL.Exception.prototype = Error.prototype;
 
-iSPARQL.E_MethodNotImplemented = function () {
+iSPARQL.E_MethodNotImplemented = function() {
     this._iSPARQL_ex_type = "E_MethodNotImplemented";
 }
 
-iSPARQL.E_InternalError = function () {
+iSPARQL.E_InternalError = function() {
     this._iSPARQL_ex_type = "E_InternalError";
 }
 

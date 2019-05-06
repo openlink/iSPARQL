@@ -18,10 +18,8 @@ ltmain.sh
 *.la
 autogen.log
 admin/
-ChangeLog
 
 # We never want vads in the repo
-vad_version
 version
 *.vad
 

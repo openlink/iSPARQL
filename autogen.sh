@@ -7,7 +7,7 @@
 #
 #  This file is part of the iSPARQL project
 #
-#  Copyright (C) 2005-2014 OpenLink Software
+#  Copyright (C) 2005-2019 OpenLink Software
 #
 #  This project is free software; you can redistribute it and/or modify it
 #  under the terms of the GNU General Public License as published by the
@@ -127,6 +127,7 @@ echo "${B}Generating build scripts${N} ..."
 
 mkdir -p admin
 
+RUN touch ChangeLog
 RUN aclocal -I admin
 RUN automake --copy --add-missing
 RUN autoconf

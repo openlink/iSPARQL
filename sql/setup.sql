@@ -1,7 +1,7 @@
 --
 --  This file is part of the iSPARQL project
 --
---  Copyright (C) 2005-2014 OpenLink Software
+--  Copyright (C) 2005-2019 OpenLink Software
 --
 --  See LICENSE file for details.
 --

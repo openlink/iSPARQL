@@ -1,7 +1,7 @@
 /*
  *  This file is part of the iSPARQL project
  *
- *  Copyright (C) 2005-2014 OpenLink Software
+ *  Copyright (C) 2005-2019 OpenLink Software
  *
  *  See LICENSE file for details.
  *
@@ -10,43 +10,47 @@
 if (typeof iSPARQL == 'undefined') iSPARQL = {};
 
 iSPARQL.StatusUI = {
-    hide: function () {
-	OAT.Dom.hide("splash");
+    hide: function() {
+        OAT.Dom.hide("splash");
     },
-    show: function () {
-	OAT.Dom.show("splash");
+    show: function() {
+        OAT.Dom.show("splash");
     },
     statMsg: function(msg, isMain) {
-	if (isMain) 
-	    $("statMsgMain").innerHTML = msg;
-	else
-	    $("statMsgElem").innerHTML = msg;
+        if (isMain)
+            $("statMsgMain").innerHTML = msg;
+        else
+            $("statMsgElem").innerHTML = msg;
     },
-    init: function () {
-	OAT.Dom.show ("splashThrobber");
+    init: function() {
+        OAT.Dom.show("splashThrobber");
     },
-    errMsg: function (msg) {
-	$("statMsgErr").innerHTML = msg;
+    errMsg: function(msg) {
+        $("statMsgErr").innerHTML = msg;
     },
-    addCustomTemplate: function (div) {
-	var c = this.newTplCtr ();
-	OAT.Dom.append ([c, div]);
+    addCustomTemplate: function(div) {
+        var c = this.newTplCtr();
+        OAT.Dom.append([c, div]);
     },
-    newTplCtr: function () {
-	var custCtr = OAT.Dom.create ("div",{className:"statusUICustCtr"});
-	OAT.Dom.append(["statMsgMain",custCtr]);
-	return custCtr;
+    newTplCtr: function() {
+        var custCtr = OAT.Dom.create("div", {
+            className: "statusUICustCtr"
+        });
+        OAT.Dom.append(["statMsgMain", custCtr]);
+        return custCtr;
     },
-    absorb: function (ctr) {
-	var c = OAT.Dom.create ("div", {className: "statusUIAbsorbedCtr"})
-	OAT.Dom.unlink (ctr);
-	OAT.Dom.append ([c, ctr]);
+    absorb: function(ctr) {
+        var c = OAT.Dom.create("div", {
+            className: "statusUIAbsorbedCtr"
+        })
+        OAT.Dom.unlink(ctr);
+        OAT.Dom.append([c, ctr]);
     }
 };
 
 iSPARQL.ErrorUI = {
-    hide: function () {},
-    clear: function () {},
-    fromGenericXhr: function () {},
-    fromSparqlQuery: function () {}
+    hide: function() {},
+    clear: function() {},
+    fromGenericXhr: function() {},
+    fromSparqlQuery: function() {}
 };
