@@ -5,7 +5,7 @@
   <name package="iSPARQL">
     <prop name="Title" value="iSPARQL"/>
     <prop name="Developer" value="OpenLink Software"/>
-    <prop name="Copyright" value="(C) 2005-2019 OpenLink Software"/>
+    <prop name="Copyright" value="(C) 2005-2020 OpenLink Software"/>
     <prop name="Download" value="http://www.openlinksw.com/virtuoso"/>
   </name>
   <version package="$VERSION$">
