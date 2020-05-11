@@ -58,7 +58,7 @@ endif
 
 # Rules to create our vads
 isparql_dav.vad: $(ISPARQL_FILES) isparql_sticker.xml Makefile
-	@VADPACKER@ \
+	@PYTHON@ @VADPACKER@ \
 		-o isparql_dav.vad \
 		--var="NEED_VERSION=$(NEED_VERSION)" \
 		--var="VERSION=`@versionp@`" \
@@ -68,7 +68,7 @@ isparql_dav.vad: $(ISPARQL_FILES) isparql_sticker.xml Makefile
 		isparql_sticker.xml
 
 isparql_filesystem.vad: $(ISPARQL_FILES) isparql_sticker.xml Makefile
-	@VADPACKER@ \
+	@PYTHON@ @VADPACKER@ \
 		-o isparql_filesystem.vad \
 		--var="NEED_VERSION=$(NEED_VERSION)" \
 		--var="VERSION=`@versionp@`" \
@@ -78,7 +78,7 @@ isparql_filesystem.vad: $(ISPARQL_FILES) isparql_sticker.xml Makefile
 		isparql_sticker.xml
 
 sticker: $(ISPARQL_FILES) isparql_sticker.xml Makefile
-	@VADPACKER@ \
+	@PYTHON@ @VADPACKER@ \
 		--print-sticker \
 		--var="NEED_VERSION=$(NEED_VERSION)" \
 		--var="VERSION=`@versionp@`" \

@@ -33,7 +33,7 @@ AM_MAINTAINER_MODE
 # --------------------------------------------------------------
 # Check for python (vadpacker)
 # --------------------------------------------------------------
-AM_PATH_PYTHON([2.5])
+AM_PATH_PYTHON([2.7])
 
 
 # --------------------------------------------------------------
@@ -43,18 +43,25 @@ AM_PATH_PYTHON([2.5])
 AC_ARG_WITH(
   [vadpacker],
   [AS_HELP_STRING(
-    [--with-vadpacker=PATH],
+    [--with-vadpacker=DIR],
     [Specify the full path to the vadpacker script to use. If not provided configure will search the PATH.])],
-  [VADPACKER=${withval}],
-  [
-    if test [ -f vadpacker/vadpacker.py ]; then
-      VADPACKER="$PYTHON `pwd`/vadpacker/vadpacker.py"
-    fi
-  ])
-AC_PATH_PROG([VADPACKER], [vadpacker.py],,)
-if test "x$VADPACKER" = "x"; then
-  AC_MSG_ERROR([cannot find vadpacker.py. Consider using --with-vadpacker=<PATH>.])
+    [
+	case "$withval" in
+	yes|no)
+		vadpacker_dir=$srcdir/vadpacker
+		;;
+	*)
+		vadpacker_dir="$withval"
+		;;
+	esac
+    ],[vadpacker_dir=$srcdir/vadpacker])
+
+abs_vadpacker_dir=`cd "$vadpacker_dir" && pwd`
+AC_PATH_PROG([VADPACKER], [vadpacker.py], notfound, ["$abs_vadpacker_dir:$PATH"])
+if test "x$VADPACKER" = "xnotfound"; then
+  AC_MSG_ERROR([cannot find vadpacker.py. Consider using --with-vadpacker=DIR])
 fi
+
 
 # --------------------------------------------------------------
 # Allow to specify the installation vad dir
